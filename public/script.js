@@ -1,4 +1,4 @@
-var app = angular.module('myApp', ['ngTagsInput','toaster',]);
+var app = angular.module('myApp', ['ngTagsInput']);
 app.controller("TodoController", function($scope, $http)
 {
   $scope.index = 0;
