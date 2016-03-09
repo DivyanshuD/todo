@@ -42,7 +42,7 @@
               <input type="text" ng-model="newTask.name" placeholder=" enter the task" required>
               <br/><br/>
               <button id="addbtn" type="submit" data-toggle="modal" data-target="#myModal" ng-click="addTask(form)" class="btn btn-default btn-sm">
-                <span class="glyphicon glyphicon-plus"></span>&nbsp;Add</button>
+                &times;&nbsp;Add</button>
 
               <br/>
               <br/>
@@ -114,13 +114,13 @@
 
                         <td class="col-md-3">
                           <button ng-click="editTask($index)" type="button" data-toggle="modal" data-target="#editModal" class="btn btn-default btn-sm">
-                            <span class="glyphicon glyphicon-pencil"></span>
+                            &times;
                           </button>
                         </td>
 
                         <td class="col-md-3">
                           <button ng-click="delTask($index)" type="button" class="btn btn-default btn-sm">
-                            <span class="glyphicon glyphicon-trash"></span>
+                            &times;
                           </button>
                         </td>
                       </tr>
@@ -142,7 +142,7 @@
                 <tr>
                   <td>
                     <button ng-click="removeCompleted()" type="button" class="btn btn-default btn-sm">
-                      <span class="glyphicon glyphicon-trash"></span>&nbsp;Remove Completed</button>
+                      &times;&nbsp;Remove Completed</button>
                   </td>
                   <td>&nbsp;</td>
                   <td>
@@ -213,9 +213,9 @@
                 </div>
                 <div class="modal-footer">
                   <button type="button" class="btn btn-default" ng-click="updateData()" data-dismiss="modal">
-                    <span class="glyphicon glyphicon-floppy-disk"></span>&nbsp;Update</button>
+                    &times;&nbsp;Update</button>
                   <button type="button" class="btn btn-default" data-dismiss="modal" ng-click="clear()">
-                    <span class="glyphicon glyphicon-remove"></span>
+                    &times;
                   </span>&nbsp;Close</button>
               </div>
             </div>
@@ -225,6 +225,5 @@
 
       </div>
     </center>
-     <toaster-container></toaster-container>
   </body>
 </html>
