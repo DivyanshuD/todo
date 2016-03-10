@@ -9,7 +9,7 @@ app.controller("TodoController", function($scope, $http)
   $scope.id = {};
 
 $scope.find=function (){
-  alert($scope.tagfind);
+  
   tagToSearch={tag: $scope.tagfind};
   $http({
     method : 'POST',
@@ -94,7 +94,7 @@ $scope.find=function (){
     });
     $scope.editTag = $scope.tagslist
     $scope.tagslist=[];
-    alert($scope.editTag);
+   // alert($scope.editTag);
 
   }
   $scope.updateData = function()
@@ -141,7 +141,7 @@ $scope.find=function (){
         data: $scope.id,
       })
       .success(function(data) {
-        alert(data);
+        //alert(data);
         $scope.tasks = data;
       //  console.log($scope.tasks[0].task_name);
         //alert($scope.tasks);
